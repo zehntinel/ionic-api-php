@@ -1,4 +1,4 @@
-<?php
+<?php namespace Zehntinel\IonicApiPhp;
 
 
 /**
@@ -167,6 +167,8 @@ class IonicPushNotifications
         $this->requestStatusCode = $response->getStatusCode();
         $this->requestStatusReason = $response->getReasonPhrase();
         $this->requestBodyContent = $response->getBody();
+
+        return $response;
     }
 
 }
